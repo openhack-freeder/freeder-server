@@ -1,0 +1,20 @@
+#!/bin/bash
+# Deploy Script for Frontend and Backend
+
+SERVER_HOST=167.99.93.8
+
+cd ..
+zip -r upload.zip somul-apply-library
+scp upload.zip root@$SERVER_HOST:/root
+ssh -tt root@$SERVER_HOST 'bash -s' << 'DEPLOY'
+
+pm2 stop freeder-server
+
+sudo unzip -o upload.zip
+sudo rm -rf upload.zip
+
+sudo chmod 777 freeder-server
+pm2 restart freeder-server
+
+exit
+DEPLOY
