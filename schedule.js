@@ -7,7 +7,8 @@ const migrations = 'python3 db_migration.py';
 const exec = require('child_process').exec;
 
 var j;
-j = schedule.scheduleJob('*/1 * * * *', function () {
+// schedule 1 month
+j = schedule.scheduleJob('* * * * 1', function () {
 	const child1 = exec(execpy1,
 		(error, stdout, stderr) => {
 			console.log(`stdout: ${stdout}`);
