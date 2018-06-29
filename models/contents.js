@@ -28,10 +28,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(1000),
       allowNull: true
     },
-    region: {
-      type: DataTypes.STRING(10),
-      allowNull: true
-    },
     url: {
       type: DataTypes.STRING(1000),
       allowNull: true

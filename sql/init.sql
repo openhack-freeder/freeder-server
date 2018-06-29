@@ -29,7 +29,6 @@ CREATE TABLE `contents` (
   `date` varchar(1000) DEFAULT NULL,
   `time` varchar(1000) DEFAULT NULL,
   `where` varchar(1000) DEFAULT NULL,
-  `region` varchar(10) DEFAULT NULL,
   `url` varchar(1000) DEFAULT NULL,
   PRIMARY KEY (`idx`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
@@ -41,7 +40,7 @@ CREATE TABLE `contents` (
 
 LOCK TABLES `contents` WRITE;
 /*!40000 ALTER TABLE `contents` DISABLE KEYS */;
-INSERT INTO `contents` VALUES (1,'축제,행사','관현악의 밤','2018.07.05 ~ 2018.07.05','(목) 오후7시30분','용인포은아트홀','경기','https://www.ggcf.or.kr/');
+INSERT INTO `contents` VALUES (1,'축제,행사','관현악의 밤','2018.07.05~2018.07.05','(목) 오후7시30분','경기용인포은아트홀','https://www.ggcf.or.kr/');
 /*!40000 ALTER TABLE `contents` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-06-29 13:52:45
+-- Dump completed on 2018-06-29 17:43:52
