@@ -1,8 +1,8 @@
 var schedule = require('node-schedule');
-const execpy1 = 'python3 yes24-crwaler.py';
-const execpy2 = 'python3 crawler_ggcf_or_kr.py';
-const execpy3 = 'python3 crawler_mimint_co_kr.py';
-const migrations = 'python3 db_migration.py';
+const execpy1 = 'python3 ~/freeder-crawler/src/yes24-crwaler.py';
+const execpy2 = 'python3 ~/freeder-crawler/src/crawler_ggcf_or_kr.py';
+const execpy3 = 'python3 ~/freeder-crawler/src/crawler_mimint_co_kr.py';
+const migrations = 'python3 ~/freeder-crawler/src/db_migration.py';
 
 const exec = require('child_process').exec;
 
