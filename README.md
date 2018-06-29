@@ -12,7 +12,13 @@ mysql -u root -p test < init.sql
 pm2 start bin/www
 ```
 
-## Example API return
+## Example 
+### API request
+```text
+curl http://167.99.93.8:3000/api/v1/get_content
+```
+
+### API return
 ```text
 [
 	{
