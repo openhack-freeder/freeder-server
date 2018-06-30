@@ -1,6 +1,11 @@
-# freeder-server
+<div align="middle">
+  <img src="https://github.com/openhack-freeder/freeder-crawler/blob/master/img/logo.png" height="250px" >
+</div>
 
-freeder의 서버 저장코드 입니다.
+<h1 align="center">freeder-server</h1>
+<p align="center">
+	<img src="https://img.shields.io/badge/OpenHack-3th-blue.svg">
+</p>
 
 ## Install
 ```bash
